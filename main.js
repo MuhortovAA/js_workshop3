@@ -39,13 +39,13 @@ function startGame() {
         line.y = i * 100;
         gameArea.appendChild(line);
     }
-    // for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
-    //     const enemy = document.createElement('div');
-    //     enemy.classList.add('enemy');
-    //     enemy.y = 100 * setting.traffic * (i + 1);
-    //     enemy.style.top = enemy.y + 'px';
-    //     gameArea.appendChild(enemy);
-    // }
+    for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
+        const enemy = document.createElement('div');
+        enemy.classList.add('enemy');
+        enemy.y = 100 * setting.traffic * (i + 1);
+        enemy.style.top = enemy.y + 'px';
+        gameArea.appendChild(enemy);
+    }
     setting.start = true;
     gameArea.appendChild(car);
     setting.x = car.offsetLeft;
