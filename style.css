@@ -45,7 +45,7 @@ table {
     display: none;
 }
 
-.car{
+.car, enemy{
     width: 50px;
     height: 100px;
     background: transparent url('./image/player.png') center / cover no-repeat;
@@ -54,7 +54,7 @@ table {
     bottom: 10px;
 
 }
-.enemy{
+/* .enemy{
     width: 50px;
     height: 100px;
     background: transparent url('./image/enemy2.png') center / cover no-repeat;
@@ -62,7 +62,7 @@ table {
     left: 125px;
     bottom: 10px;
 
-}
+} */
 .gameArea {
     margin: auto;
     width: 300px;
